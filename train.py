@@ -225,14 +225,8 @@ if __name__ == '__main__':
     # https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
     parser.add_argument('--train-data-path', type=str,
                         default="your train file path")
-    # parser.add_argument('--val-data-path', type=str,
-    #                     default="../筛选结果三分类/val")
     parser.add_argument('--val-data-path', type=str,
                         default="your val file path")
-
-    # 预训练权重路径，如果不想载入就设置为空字符
-    # 链接: https://pan.baidu.com/s/1aNqQW4n_RrUlWUBNlaJRHA  密码: i83t
-    # parser.add_argument('--weights', type=str, default='',
     parser.add_argument('--weights', type=str, default='',
                         help='initial weights path')
     # 是否冻结head以外所有权重
