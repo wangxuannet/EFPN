@@ -7,9 +7,9 @@ import torch
 import torch.optim as optim
 from torchvision import transforms
 
-from my_dataset2 import MyDataSet
-from model_attention_wsi import PyramidMIL as create_model
-from utils6 import read_split_data, create_lr_scheduler, get_params_groups, train_one_epoch, evaluate
+from my_dataset import MyDataSet
+from EFPN_model import PyramidMIL as create_model
+from utils import read_split_data, create_lr_scheduler, get_params_groups, train_one_epoch, evaluate
 
 import csv
 import datetime
