@@ -1,7 +1,4 @@
-"""
-original code from facebook research:
-https://github.com/facebookresearch/ConvNeXt
-"""
+
 
 import torch
 import torch.nn as nn
