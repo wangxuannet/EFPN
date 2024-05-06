@@ -224,13 +224,11 @@ if __name__ == '__main__':
 
     # https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
     parser.add_argument('--train-data-path', type=str,
-                        # default="D:\\.导师\\中肿\\数据切割\\dataset\\train")
-                        default="F:\\pythonProjects\\中肿\\公开数据集WSI20筛选结果\\train")
+                        default="your train file path")
     # parser.add_argument('--val-data-path', type=str,
     #                     default="../筛选结果三分类/val")
     parser.add_argument('--val-data-path', type=str,
-                        # default="D:\\.导师\\中肿\\数据切割\\dataset\\val")
-                        default="F:\\pythonprojects\\中肿\\公开数据集WSI20筛选结果\\val")
+                        default="your val file path")
 
     # 预训练权重路径，如果不想载入就设置为空字符
     # 链接: https://pan.baidu.com/s/1aNqQW4n_RrUlWUBNlaJRHA  密码: i83t
