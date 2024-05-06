@@ -234,9 +234,9 @@ def cacu_auc(label, prob):
 def train_one_epoch(model, optimizer, data_loader, device, epoch, lr_scheduler):
     model.train()
     # loss_function = torch.nn.CrossEntropyLoss()
-    # loss_function = Myloss()
+    loss_function = Myloss()
     # loss_function = FocalLoss()
-    loss_function = torch.nn.MSELoss()
+    # loss_function = torch.nn.MSELoss()
     accu_loss = torch.zeros(1).to(device)  # 累计损失
     accu_num = torch.zeros(1).to(device)   # 累计预测正确的样本数
     optimizer.zero_grad()
@@ -284,8 +284,8 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, lr_scheduler):
 @torch.no_grad()
 def evaluate(model, data_loader, device, epoch):
     # loss_function = torch.nn.CrossEntropyLoss()
-    # loss_function = Myloss()
-    loss_function = torch.nn.MSELoss()
+    loss_function = Myloss()
+    # loss_function = torch.nn.MSELoss()
     # loss_function = FocalLoss()
     model.eval()
 
